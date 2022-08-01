@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap');
+body{
+  font-family: 'Barlow', sans-serif;
+  margin: 0;
+
+    color: white;
+      background-color: #121212;
+}
+
+a{
+    text-decoration: none;
+    color: var(--clr-light);
+}
+
+i{
+    font-size: 2.4rem;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99%;
+    z-index: 999;
+    margin-left: 5px;
+
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+}
+
+.nav2{
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+}
+
+.ri-menu-4-fill{
+  color: white;
+}
+
+.logo-box{
+    min-width: 10.8rem;
+}
+
+.menu{
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 35%;
+    background-color: white;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    z-index: 9999;
+    transition: .5s ease;
+    text-align: center;
+    color: black;
+}
+
+.menu,
+.nav-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-list{
+  padding-left: 0;
+}
+
+.nav-link{
+    letter-spacing: 1px;
+}
+
+.menu-toogle-close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.sm-screen-hidden{
+    display: none;
+}
+
+.menu-toggle-icon{
+    cursor: pointer;
+}
+
+/*Menu Javascript styles*/
+.menu.menu-opened{
+    top: 8rem;
+}
+
+.header::after{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    z-index: 1500;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity .5s;
+}
+
+.menu-opened.header::after{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.contacts{
+  background-color: hsl(51, 100%, 49%);
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  border-radius: 25px;
+  text-transform: uppercase;
+}
+.float-navbar{
+  display: flex;
+}
+
+.menu2{
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+  color: white;
+}
+
+.menu2 a{
+  text-decoration: none;
+}
+
+.menu2 li{
+    display: inline;
+    padding-left: 30px;
+}
+
+.contacts2{
+  background-color: #ffffff;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  border-radius: 25px;
+  text-transform: uppercase;
+  color: black;
+  transition: 0.3s;
+}
+.contacts2:hover{
+  background-color: #EBEBEB;
+  transition: 0.3s;
+}
+
+.text1{
+  background-color: white;
+  max-width: 1024px;
+  height: 100%;
+}
+@media screen and (min-width: 1024px){
+  .img-1{
+    display: none;
+  }
+  .img-2{
+    display: flex;
+  }
+  .nav{
+    display: none;
+  }
+  .nav2{
+    display: flex;
+  }
+
+  .title h1{
+    margin-top: 150px;
+  }
+
+  .containerr{
+    width: 75%;
+  }
+}
+
+.block{
+  height: 500px;
+  width: 100%;
+  /* background-color: red; */
+  padding-top: 3%;
+}
+.containerr{
+  width: 60%;
+  display: flex;
+  height: 100%;
+
+  margin-top: 2%;
+}
+.containerr2{
+  padding-bottom: 3%;
+}
+.lol{
+  display: flex;
+  justify-content: center;
+
+}
+.title{
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 0px;
+}
+.evolution{
+  text-align: center;
+}
+h1{
+  padding-top: 70px;
+  font-size: 30px;
+  text-align: left;
+  font-weight: 600;
+}
+p{
+  font-size: 15px;
+  word-spacing: 3px;
+  font-family: 'Sorts Mill Goudy', serif;
+  text-align: left;
+  line-height: 25px;
+}
+footer{
+  border-top: white solid 2px;
+  text-align: center;
+  width: 100%;
+  margin-top: 10%;
+  padding-top: 2%;
+}
